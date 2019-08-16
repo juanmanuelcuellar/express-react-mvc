@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="bower_components/boostrap/dist/css/bootstrap.min.css")
+        title Document
+    body
+        form(action="add" method="POST") 
+            input(type="text" name="nombre")
+            input(type="text" name="apellido")
+            input(class="btn btn-primary" type="submit", value="Generar")
+        h2 nombre: #{nombre}
+        h2 apellido: #{apellido}
