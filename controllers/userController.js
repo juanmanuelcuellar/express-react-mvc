@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/usuario', (req,res) =>{
-    res.render('index');
+    res.render('inicio');
 });
 
 router.post('/add', (req,res) =>{
