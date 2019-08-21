@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/usuario', (req,res) =>{
-    res.render('inicio');
+router.get('/', (req,res) =>{
+    res.render('hola');
 });
 
 router.post('/add', (req,res) =>{
