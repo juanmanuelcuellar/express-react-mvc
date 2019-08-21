@@ -1,12 +1,23 @@
-extends index.pug
+extends config/config.pug
 
 block content
 
-    .dropdown
-        button.btn.btn-secondary.dropdown-toggle(type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
-            | Dropdown button
-        .dropdown-menu(aria-labelledby="dropdownMenuButton")
-            a.dropdown-item(href="") 22
-            a.dropdown-item(href="") 333
-            a.dropdown-item(href="") 4444
-    
+    nav.navbar.navbar-light.navbar-expand-lg.fixed-top.bg-white.clean-navbar
+        .container
+            a.navbar-brand.logo(href='#') Brand
+            button.navbar-toggler(data-toggle='collapse' data-target='#navcol-1')
+                span.sr-only Toggle navigation
+                span.navbar-toggler-icon
+            #navcol-1.collapse.navbar-collapse
+                ul.nav.navbar-nav.ml-auto
+                    li.nav-item(role='presentation')
+                        a.nav-link(href='#') Home
+                    li.nav-item(role='presentation')
+                        a.nav-link(href='#') Features
+                    li.nav-item(role='presentation')
+                        a.nav-link(href='#') Pricing
+                    li.nav-item(role='presentation')
+                        a.nav-link(href='#') About Us
+                    li.nav-item(role='presentation')
+                        a.nav-link(href='#') Contact Us
+
