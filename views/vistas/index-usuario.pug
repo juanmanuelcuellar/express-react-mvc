@@ -1,0 +1,20 @@
+extends ../Navbars/navbar-usuario.pug
+
+block navbar-usuario
+
+    #carouselExampleControls.carousel.slide(data-ride='carousel')
+        .carousel-inner
+            .carousel-item.active
+                img.d-block.w-100(src='img/slider-1.jpg' style="width:900px" alt='First slide')
+            .carousel-item
+                img.d-block.w-100(src='img/slider-2.jpg' style="width:900px" alt='Second slide')
+            .carousel-item
+                img.d-block.w-100(src='img/slider-3.jpg' style="width:900px" alt='Third slide')
+        a.carousel-control-prev(href='#carouselExampleControls' role='button' data-slide='prev')
+            span.carousel-control-prev-icon(aria-hidden='true')
+            span.sr-only Previous
+        a.carousel-control-next(href='#carouselExampleControls' role='button' data-slide='next')
+            span.carousel-control-next-icon(aria-hidden='true')
+            span.sr-only Next
+
+    include ../footer/footer.pug

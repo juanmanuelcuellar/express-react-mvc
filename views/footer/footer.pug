@@ -1,0 +1,45 @@
+extends ../config/config.pug
+
+block content
+
+    .footer-clean
+        footer
+            .container
+                .row.justify-content-center
+                    .col-sm-4.col-md-3.item
+                        h3 Services
+                        ul
+                            li
+                                a(href='#') Web design
+                            li
+                                a(href='#') Development
+                            li
+                                a(href='#') Hosting
+                    .col-sm-4.col-md-3.item
+                        h3 About
+                        ul
+                            li
+                            a(href='#') Company
+                            li
+                            a(href='#') Team
+                            li
+                            a(href='#') Legacy
+                    .col-sm-4.col-md-3.item
+                        h3 Careers
+                        ul
+                            li
+                            a(href='#') Job openings
+                            li
+                            a(href='#') Employee success
+                            li
+                            a(href='#') Benefits
+                    .col-lg-3.item.social
+                        a(href='#')
+                            include ../../public/img/facebook-logo.svg
+                        a(href='#')
+                            include ../../public/img/twitter.svg
+                        a(href='#')
+                            include ../../public/img/snapchat.svg
+                        a(href='#')
+                            include ../../public/img/instagram.svg
+                    p.copyright Company Name &copy; 2017

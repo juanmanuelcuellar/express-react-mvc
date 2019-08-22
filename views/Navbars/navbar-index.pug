@@ -1,4 +1,4 @@
-extends config/config.pug
+extends ../config/config.pug
 
 block content
 
@@ -11,13 +11,8 @@ block content
             #navcol-1.collapse.navbar-collapse
                 ul.nav.navbar-nav.ml-auto
                     li.nav-item(role='presentation')
-                        a.nav-link(href='#') Home
+                        a.nav-link.hvr-underline-from-left(href='/ingreso') Iniciar Sesion
                     li.nav-item(role='presentation')
-                        a.nav-link(href='#') Features
-                    li.nav-item(role='presentation')
-                        a.nav-link(href='#') Pricing
-                    li.nav-item(role='presentation')
-                        a.nav-link(href='#') About Us
-                    li.nav-item(role='presentation')
-                        a.nav-link(href='#') Contact Us
+                        a.nav-link.hvr-underline-from-left(href='/registro') Crear Cuenta
 
+    block navbar-index

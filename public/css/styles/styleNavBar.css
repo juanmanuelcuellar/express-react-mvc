@@ -8,3 +8,8 @@ li.nav-item{
     padding-left: 10px;
     padding-right: 10px;
 }
+
+li.nav-item a.nav-link, a.navbar-brand.logo{
+    font-family: 'Passion One', cursive;
+    font-size: 22px;
+}
