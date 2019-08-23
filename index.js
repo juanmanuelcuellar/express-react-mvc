@@ -19,7 +19,19 @@ app.use(express.static(path.join(__dirname,'public')));
 
 // controllers
 
-app.use(require('./controllers/userController'));
+// usuario
+
+app.use(require('./controllers/usuarios/usuariosController'));
+app.use(require('./controllers/usuarios/cuentas/formValidation'));
+app.use(require('./controllers/usuarios/cuentas/usuarioUI'));
+
+// empleados
+
+app.use(require('./controllers/empleados/empleadosController'));
+
+// administrador
+
+app.use(require('./controllers/admin/adminController'));
 
 // models
 
