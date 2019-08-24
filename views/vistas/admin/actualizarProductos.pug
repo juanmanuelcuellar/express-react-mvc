@@ -1,0 +1,28 @@
+extends ../../config/config.pug
+
+block content
+
+    <!-- Consultar Empleado -->
+    <!-- Agregar Empleado -->
+    <!-- Disponibilidad -->
+    #wrapper.d-flex
+        include ../../listgroup/listgroup-admin.pug
+        #page-content-wrapper
+            include ../../Navbars/navbar-AdminUI.pug
+            .container-fluid
+                container
+                    form.form-modificar-adminUI(action="" method="POST")
+                        .form-group
+                            label(for="nombreProducto") Nombre del producto:
+                            input.form-control#nombreProducto(type="text" name="nombreProducto" placeholder="Nombre del producto")
+                        .form-group
+                            label(for="cantidad") Stock:
+                            input.form-control#categoria(type="number" name="cantidad" placeholder="Cantidad")
+
+                        input.btn.btn-success(type="submit", value="Actualizar")
+
+    script.
+        $('#menu-toggle').click(function(e){
+            e.preventDefault();
+            $('#wrapper').toggleClass('toggled');
+        });

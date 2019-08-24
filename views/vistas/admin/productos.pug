@@ -3,20 +3,43 @@ extends ../../config/config.pug
 block content
 
     #wrapper.d-flex
+        include ../../listgroup/listgroup-admin.pug
         #page-content-wrapper
             include ../../Navbars/navbar-AdminUI.pug
             .container-fluid
             <!-- agregar el producto como tal -->
-                .row
-                    .col-md-6
-                        form(action="", method="post")
-                            input(type="text" name="categoriaProducto")
-                            input(type="text" name="descripcion")
             <!-- consultar dicha categoria -->
-                    .col-md-6
+            <!-- consultar todos los productos -->
+                .row
+                    .col-xs-6
                         form(action="", method="post")
                             input(type="text" name="opcion")
-            <!-- consultar todos los productos -->
+                            input.btn.btn-primary(type="submit" value="Buscar")
+                    .col-xs-6
+                        a.btn.btn-danger(href="/AdminUI/productos/agregar" role="button") Agregar Producto
+                        a.btn.btn-secondary(href="/AdminUI/productos/actualizar" role="button") Actualizar Productos
+            table.table
+                thead.thead-dark
+                    tr
+                        th(scope="col") #
+                        th(scope="col") Nombre Producto
+                        th(scope="col") Categoria
+                        th(scope="col") Descripcion
+                        th(scope="col") Stock
+                tbody
+                    tr
+                        th 1
+                        th Intel i5 6800k
+                        th Producto por separado
+                        th 3.2 ghz boost 3.8 ghz 6 nucleos
+                        th 2
+                    tr
+                        th 2
+                        th Pc gamer 2017
+                        th equipo ensamblado
+                        th 15 8gb ram 1tb gtx 1050 4gb
+                        th 1
+            
 
     script.
         $('#menu-toggle').click(function(e){

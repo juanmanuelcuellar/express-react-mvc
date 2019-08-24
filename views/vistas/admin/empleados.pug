@@ -2,31 +2,37 @@ extends ../../config/config.pug
 
 block content
 
+    <!-- Consultar Empleado -->
+    <!-- Agregar Empleado -->
+    <!-- Disponibilidad -->
     #wrapper.d-flex
+        include ../../listgroup/listgroup-admin.pug
         #page-content-wrapper
             include ../../Navbars/navbar-AdminUI.pug
             .container-fluid
                 .row
-                    .col-md-6.col-xs-6.col-sm-6
-                        form(action="", method="post")
-                            input(type="text" name="nombreEmpleado")
-                    .col-md-6.col-xs-6.col-sm-6
-                        a.btn.btn-danger(href="#" role="button") Agregar Empleado
-                    a.btn.btn-danger(href="#" role="button") Consultar
+                    .col-xs-6
+                        form.form-inline(action="", method="POST")
+                            .form-group
+                                label(for="nombreEmpleado")
+                                input.mb-2#nombreEmpleado(type="text", name="nombreEmpleado" placeholder="Nombre del Empleado")
+                            input.btn.btn-primary(type="submit", value="Buscar")
+                    .col-xs-6
+                        a.btn.btn-success(href="/AdminUI/empleados/agregar" role="button") Agregar Empleado
                 table.table
                     thead.thead-dark
                         tr
                             th(scope="col") #
                             th(scope="col") Nombre
                             th(scope="col") Apellido
-                            th(scope="col") Cedula
+                            th(scope="col") Correo
                             th(scope="col") Accion
                     tbody
                         tr
                             th 1
                             th juan
                             th manuel
-                            th 315382839
+                            th empleado1@gmail.com
                             th
                                 a.btn.btn-danger(role="button" href="#") Eliminar
                                 a.btn.btn-success.hola(role="button" href="#") Disponible
@@ -34,7 +40,7 @@ block content
                             th 2
                             th cuellar
                             th bahamon
-                            th 315382839
+                            th empleado2@gmail.com
                             th
                                 a.btn.btn-danger(role="button" href="#") Eliminar
                                 a.btn.btn-success(role="button" href="#") Disponible

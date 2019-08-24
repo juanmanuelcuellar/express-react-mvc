@@ -3,10 +3,31 @@ extends ../../config/config.pug
 block content
 
     #wrapper.d-flex
+        include ../../listgroup/listgroup-empleados.pug
         #page-content-wrapper
             include ../../Navbars/navbar-EmpleadoUI.pug
             .container-fluid
-                h1.mt-4 comentarios
+                table.table
+                    thead.thead-dark
+                        tr
+                            th(scope="col") #
+                            th(scope="col") Comentario
+                            th(scope="col") Respuesta
+                    tbody
+                        tr
+                            th 1
+                            th Buenas tardes dan servicio 24/7
+                            th 
+                                form(action="", method="POST")
+                                    input(type="text" name="resComentario")
+                                    input.btn.btn-primary(type="submit", value="Enviar Respuesta")
+                        tr
+                            th 2
+                            th Buenas tardes dan servicio 24/7
+                            th 
+                                form(action="", method="POST")
+                                    input(type="text" name="resComentario")
+                                    input.btn.btn-primary(type="submit", value="Enviar Respuesta")
 
     script.
         $('#menu-toggle').click(function(e){

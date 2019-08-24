@@ -3,10 +3,25 @@ extends ../../config/config.pug
 block content
 
     #wrapper.d-flex
+        include ../../listgroup/listgroup-usuario.pug
         #page-content-wrapper
             include ../../Navbars/navbar-UsuarioUI.pug
             .container-fluid
-                h1.mt-4 comentarios
+                table.table
+                    thead.thead-dark
+                        tr
+                            th(scope="col") #
+                            th(scope="col") Comentario
+                            th(scope="col") Respuesta
+                    tbody
+                        tr
+                            th 1
+                            th Dan servicio 24/7
+                            th No respondido
+                        tr
+                            th 2
+                            th Ofencen servicio los fines de semana
+                            th Si 
 
     script.
         $('#menu-toggle').click(function(e){

@@ -1,0 +1,33 @@
+extends ../../config/config.pug
+
+block content
+
+    <!-- Consultar Empleado -->
+    <!-- Agregar Empleado -->
+    <!-- Disponibilidad -->
+    #wrapper.d-flex
+        #page-content-wrapper
+            include ../../Navbars/navbar-AdminUI.pug
+            .container-fluid
+                container
+                    form.form-modificar-adminUI(action="" method="POST")
+                        .form-group
+                            label(for="nombreProducto") Nombre del producto:
+                            input.form-control#nombreProducto(type="text" name="nombreProducto" placeholder="Nombre del producto")
+                        .form-group
+                            label(for="categoria") Categoria:
+                            input.form-control#categoria(type="text" name="categoria" placeholder="Categoria")
+                        .form-group
+                            label(for="descripcion") Descripcion:
+                            input.form-control#descripcion(type="text" name="descripcion" placeholder="Descripcion")
+                        .form-group
+                            label(for="stock") Stock:
+                            input.form-control#stock(type="number" name="stock" placeholder="Stock")
+
+                        input.btn.btn-success(type="submit", value="Agregar")
+
+    script.
+        $('#menu-toggle').click(function(e){
+            e.preventDefault();
+            $('#wrapper').toggleClass('toggled');
+        });

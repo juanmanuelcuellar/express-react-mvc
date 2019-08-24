@@ -3,15 +3,17 @@ extends ../../config/config.pug
 block content
 
     #wrapper.d-flex
+        include ../../listgroup/listgroup-admin.pug
         #page-content-wrapper
             include ../../Navbars/navbar-AdminUI.pug
             .container-fluid
                 .row
-                    .col-md-6.col-xs-6.col-sm-6
-                        form(action="", method="post")
-                            input(type="text" name="nombreEmpleado")
-                    .col-md-6.col-xs-6.col-sm-6
-                    a.btn.btn-danger(href="#" role="button") Consultar
+                    .col-xs-12
+                        form.form-inline(action="", method="POST")
+                            .form-group
+                                label(for="nombreUsuario")
+                                input.mb-2#nombreUsuario(type="text", name="nombreUsuario" placeholder="Nombre del Usuario")
+                            input.btn.btn-primary(type="submit", value="Buscar")
                 table.table
                     thead.thead-dark
                         tr

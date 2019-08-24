@@ -3,10 +3,34 @@ extends ../../config/config.pug
 block content
 
     #wrapper.d-flex
+        include ../../listgroup/listgroup-usuario.pug
         #page-content-wrapper
             include ../../Navbars/navbar-UsuarioUI.pug
             .container-fluid
-                h1.mt-4 historial de compras
+                table.table
+                    thead.thead-dark
+                        tr
+                            th(scope="col") #
+                            th(scope="col") Nombre Producto
+                            th(scope="col") Categoria
+                            th(scope="col") Descripcion
+                            th(scope="col") Cantidad
+                            th(scope="col") Fecha
+                    tbody
+                        tr
+                            th 1
+                            th Intel i5 6800k
+                            th Producto por separado
+                            th 3.2 ghz boost 3.8 ghz 6 nucleos
+                            th 2
+                            th 27/07/2018
+                        tr
+                            th 2
+                            th Pc gamer 2017
+                            th equipo ensamblado
+                            th 15 8gb ram 1tb gtx 1050 4gb
+                            th 1
+                            th 27/07/2019
 
     script.
         $('#menu-toggle').click(function(e){

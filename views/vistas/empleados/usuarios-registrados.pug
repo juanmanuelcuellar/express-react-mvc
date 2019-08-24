@@ -3,10 +3,35 @@ extends ../../config/config.pug
 block content
 
     #wrapper.d-flex
+        include ../../listgroup/listgroup-empleados.pug
         #page-content-wrapper
             include ../../Navbars/navbar-EmpleadoUI.pug
             .container-fluid
-                h1.mt-4 usuarios registrados
+                .row
+                    .col-xs-12
+                        form.form-inline(action="", method="POST")
+                            .form-group
+                                label(for="nombreUsuario")
+                                input.mb-2#nombreUsuario(type="text", name="nombreUsuario" placeholder="Nombre del Usuario")
+                            input.btn.btn-primary(type="submit", value="Buscar")
+                table.table
+                    thead.thead-dark
+                        tr
+                            th(scope="col") #
+                            th(scope="col") Nombre
+                            th(scope="col") Apellido
+                            th(scope="col") Cedula
+                    tbody
+                        tr
+                            th 1
+                            th juan
+                            th manuel
+                            th 315382839
+                        tr
+                            th 2
+                            th cuellar
+                            th bahamon
+                            th 315382839
 
     script.
         $('#menu-toggle').click(function(e){

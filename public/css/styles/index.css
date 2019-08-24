@@ -49,3 +49,28 @@ button#menu-toggle.btn.btn-primary svg{
     width: 15px;
     height: 15px;
 }
+
+input.btn.btn-success[type="submit"]{
+    width: 100%;
+    font-size: 20px
+}
+
+form.form-modificar-adminUI{
+    margin-bottom: 20px;
+}
+
+.col-xs-6 a.btn.btn-success{
+    margin-left: 40px;
+}
+
+.col-xs-6 form .form-group{
+    margin-left: 40px;
+}
+
+.row a.btn.btn-danger{
+    margin-left: 20px;
+}
+
+tbody tr th form input[type="text"]{
+    width: 60%;
+}

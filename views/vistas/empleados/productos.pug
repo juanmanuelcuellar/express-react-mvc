@@ -3,10 +3,37 @@ extends ../../config/config.pug
 block content
 
     #wrapper.d-flex
+        include ../../listgroup/listgroup-empleados.pug
         #page-content-wrapper
             include ../../Navbars/navbar-EmpleadoUI.pug
             .container-fluid
-                h1.mt-4 productos
+                .row
+                    .col-xs-6
+                        form(action="", method="post")
+                            input(type="text" name="opcion" placeholder="Nombre del producto")
+                            input.btn.btn-primary(type="submit" value="Buscar")
+                    .col-xs-6
+            table.table
+                thead.thead-dark
+                    tr
+                        th(scope="col") #
+                        th(scope="col") Nombre Producto
+                        th(scope="col") Categoria
+                        th(scope="col") Descripcion
+                        th(scope="col") Stock
+                tbody
+                    tr
+                        th 1
+                        th Intel i5 6800k
+                        th Producto por separado
+                        th 3.2 ghz boost 3.8 ghz 6 nucleos
+                        th 2
+                    tr
+                        th 2
+                        th Pc gamer 2017
+                        th equipo ensamblado
+                        th 15 8gb ram 1tb gtx 1050 4gb
+                        th 1
 
     script.
         $('#menu-toggle').click(function(e){

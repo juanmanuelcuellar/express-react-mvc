@@ -2,12 +2,15 @@ extends ../../config/config.pug
 
 block content
 
+    <!-- Consultar Empleado -->
+    <!-- Agregar Empleado -->
+    <!-- Disponibilidad -->
     #wrapper.d-flex
         include ../../listgroup/listgroup-admin.pug
         #page-content-wrapper
             include ../../Navbars/navbar-AdminUI.pug
             .container-fluid
-                .container
+                container
                     form.form-modificar-adminUI(action="" method="POST")
                         .form-group
                             label(for="nombre") Nombre:
@@ -22,7 +25,7 @@ block content
                             label(for="password") Contraseña:
                             input.form-control#password(type="password" name="password" placeholder="Contraseña")
 
-                        input.btn.btn-success(type="submit", value="Modificar")
+                        input.btn.btn-success(type="submit", value="Agregar")
 
     script.
         $('#menu-toggle').click(function(e){

@@ -3,10 +3,26 @@ extends ../../config/config.pug
 block content
 
     #wrapper.d-flex
+        include ../../listgroup/listgroup-usuario.pug
         #page-content-wrapper
             include ../../Navbars/navbar-UsuarioUI.pug
             .container-fluid
-                h1.mt-4 modificar
+                .container
+                    form.form-modificar-adminUI(action="" method="POST")
+                        .form-group
+                            label(for="nombre") Nombre:
+                            input.form-control#nombre(type="text" name="nombre" placeholder="Nombre")
+                        .form-group
+                            label(for="apellido") Apellido:
+                            input.form-control#apellido(type="text" name="apellido" placeholder="Apellido")
+                        .form-group
+                            label(for="email") Correo:
+                            input.form-control#email(type="email" name="email" placeholder="Email")
+                        .form-group
+                            label(for="password") Contraseña:
+                            input.form-control#password(type="password" name="password" placeholder="Contraseña")
+
+                        input.btn.btn-success(type="submit", value="Modificar")
 
     script.
         $('#menu-toggle').click(function(e){
