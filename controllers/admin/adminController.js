@@ -5,23 +5,23 @@ router.get('/AdminUI', (req,res) =>{
     res.render('vistas/admin/adminUI')
 });
 
-router.get('/modificarAdmin', (req,res) =>{
+router.get('/AdminUI/modificar', (req,res) =>{
     res.render('vistas/admin/modificar')
 });
 
-router.get('/empleadosAdmin', (req,res) =>{
+router.get('/AdminUI/empleados', (req,res) =>{
     res.render('vistas/admin/empleados')
 });
 
-router.get('/productosAdmin', (req,res) =>{
+router.get('/AdminUI/productos', (req,res) =>{
     res.render('vistas/admin/productos')
 });
 
-router.get('/ventasAdmin', (req,res) =>{
+router.get('/AdminUI/ventas', (req,res) =>{
     res.render('vistas/admin/ventas')
 });
 
-router.get('/usuariosAdmin', (req,res) =>{
+router.get('/AdminUI/usuarios', (req,res) =>{
     res.render('vistas/admin/usuarios-registrados')
 });
 

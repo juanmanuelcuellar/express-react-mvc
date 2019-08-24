@@ -5,15 +5,15 @@ router.get('/UsuarioUI', (req,res) =>{
     res.render('vistas/usuarios/usuarioUI')
 });
 
-router.get('/modificarUsuario', (req,res) =>{
+router.get('/UsuarioUI/modificar', (req,res) =>{
     res.render('vistas/usuarios/modificar')
 });
 
-router.get('/historialCompras', (req,res) =>{
+router.get('/UsuarioUI/historialCompras', (req,res) =>{
     res.render('vistas/usuarios/historial-compras')
 });
 
-router.get('/comentariosUsuario', (req,res) =>{
+router.get('/UsuarioUI/comentarios', (req,res) =>{
     res.render('vistas/usuarios/comentarios')
 });
 

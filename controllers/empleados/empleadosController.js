@@ -5,23 +5,23 @@ router.get('/EmpleadosUI', (req,res) =>{
     res.render('vistas/empleados/empleadosUI')
 });
 
-router.get('/modificarEmpleado', (req,res) =>{
+router.get('/EmpleadosUI/modificar', (req,res) =>{
     res.render('vistas/empleados/modificar')
 })
 
-router.get('/comentariosEmpleado', (req,res) =>{
+router.get('/EmpleadosUI/comentarios', (req,res) =>{
     res.render('vistas/empleados/comentarios')
 })
 
-router.get('/ventasEmpleado', (req,res) =>{
+router.get('/EmpleadosUI/ventas', (req,res) =>{
     res.render('vistas/empleados/ventas')
 })
 
-router.get('/productosEmpleado', (req,res) =>{
+router.get('/EmpleadosUI/productos', (req,res) =>{
     res.render('vistas/empleados/productos')
 })
 
-router.get('/usuariosEmpleado', (req,res) =>{
+router.get('/EmpleadosUI/usuarios', (req,res) =>{
     res.render('vistas/empleados/usuarios-registrados')
 })
 
