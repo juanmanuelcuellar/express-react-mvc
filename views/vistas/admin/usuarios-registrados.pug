@@ -6,7 +6,31 @@ block content
         #page-content-wrapper
             include ../../Navbars/navbar-AdminUI.pug
             .container-fluid
-                h1.mt-4 usuarios registrados
+                .row
+                    .col-md-6.col-xs-6.col-sm-6
+                        form(action="", method="post")
+                            input(type="text" name="nombreEmpleado")
+                    .col-md-6.col-xs-6.col-sm-6
+                    a.btn.btn-danger(href="#" role="button") Consultar
+                table.table
+                    thead.thead-dark
+                        tr
+                            th(scope="col") #
+                            th(scope="col") Nombre
+                            th(scope="col") Apellido
+                            th(scope="col") Cedula
+                    tbody
+                        tr
+                            th 1
+                            th juan
+                            th manuel
+                            th 315382839
+                        tr
+                            th 2
+                            th cuellar
+                            th bahamon
+                            th 315382839
+
 
     script.
         $('#menu-toggle').click(function(e){

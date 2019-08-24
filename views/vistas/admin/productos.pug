@@ -6,7 +6,17 @@ block content
         #page-content-wrapper
             include ../../Navbars/navbar-AdminUI.pug
             .container-fluid
-                h1.mt-4 productos
+            <!-- agregar el producto como tal -->
+                .row
+                    .col-md-6
+                        form(action="", method="post")
+                            input(type="text" name="categoriaProducto")
+                            input(type="text" name="descripcion")
+            <!-- consultar dicha categoria -->
+                    .col-md-6
+                        form(action="", method="post")
+                            input(type="text" name="opcion")
+            <!-- consultar todos los productos -->
 
     script.
         $('#menu-toggle').click(function(e){
