@@ -24,6 +24,7 @@ app.use(express.static(path.join(__dirname,'public')));
 app.use(require('./controllers/usuarios/usuariosController'));
 app.use(require('./controllers/usuarios/cuentas/formValidation'));
 app.use(require('./controllers/usuarios/cuentas/usuarioUI'));
+app.use(require('./controllers/productos/productosController'));
 
 // empleados
 

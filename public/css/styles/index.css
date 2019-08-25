@@ -106,3 +106,29 @@ tbody tr th form input[type="text"]{
 .row .col-4 a{
     background: #888;
 }
+
+ul.nav.justify-content-center li.nav-item  a.hvr-icon-down svg{
+    width: 15px;
+    height: 15px;
+    margin-left: 0.5em;
+}
+
+ul.nav.justify-content-center{
+    margin-top: 65px;
+}
+
+ul.nav.justify-content-center li.nav-item{
+    padding: 10px;
+    margin-left: 5px;
+}
+
+ul.nav.justify-content-center li.nav-item  a.hvr-icon-down{
+    font-family: 'Concert One', cursive;
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+
+ul.nav.justify-content-center{
+    background: #666;
+}

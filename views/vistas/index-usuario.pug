@@ -2,6 +2,8 @@ extends ../Navbars/navbar-usuario.pug
 
 block navbar-usuario
 
+    include ../Navbars/navbar-index-usuario.pug
+
     #carouselExampleControls.carousel.slide(data-ride='carousel')
         .carousel-inner
             .carousel-item.active
@@ -18,12 +20,6 @@ block navbar-usuario
             span.sr-only Next
 
     br
-
-    .row
-        .col-xs-6
-            include ../listgroup/list-group-usuario-index.pug
-        .col-xs-6
-            h2 ejifiej
 
     .container
         #carouselExampleControls2.carousel.slide(data-ride='carousel')
