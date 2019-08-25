@@ -3,4 +3,33 @@ extends ../../Navbars/navbar-usuario.pug
 block navbar-usuario
 
     include ../../Navbars/navbar-index-usuario.pug
-    h2 monitores
+    
+    .parralax-monitores
+    
+    br
+
+    .container
+        .row
+            .col-xs-4.col-md-4
+                .card
+                    img.card-img-top(src="/img/slider/slider-1.jpg")
+                    .card-body
+                        h5.card-title Nombre Producto
+                        p.card-text Descripcion del producto
+                        a.btn.btn-primary(href="#") Ver M&aacute;s
+            .col-xs-4.col-md-4
+                .card
+                    img.card-img-top(src="/img/slider/slider-1.jpg")
+                    .card-body
+                        h5.card-title Nombre Producto
+                        p.card-text Descripcion del producto
+                        a.btn.btn-primary(href="#") Ver M&aacute;s
+            .col-xs-4.col-md-4
+                .card
+                    img.card-img-top(src="/img/slider/slider-1.jpg")
+                    .card-body
+                        h5.card-title Nombre Producto
+                        p.card-text Descripcion del producto
+                        a.btn.btn-primary(href="#") Ver M&aacute;s
+
+    include ../../footer/footer.pug

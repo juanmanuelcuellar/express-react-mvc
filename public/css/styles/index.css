@@ -103,6 +103,96 @@ tbody tr th form input[type="text"]{
     background-size: cover;
 }
 
+.parralax-disco-duro{
+    background-image: url("../../img/parralax/parralax-disco-duro.jpg");
+    height: 300px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parralax-equipos-hechos{
+    background-image: url("../../img/parralax/parralax-equipos-hechos.jpg");
+    height: 300px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parralax-fuente-poder{
+    background-image: url("../../img/parralax/parralax-fuente-poder.jpg");
+    height: 300px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parralax-memoria-ram{
+    background-image: url("../../img/parralax/parralax-memoria-ram.jpg");
+    height: 300px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parralax-monitores{
+    background-image: url("../../img/parralax/parralax-monitores.jpg");
+    height: 300px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parralax-mouse{
+    background-image: url("../../img/parralax/parralax-mouse.jpg");
+    height: 300px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parralax-procesadores{
+    background-image: url("../../img/parralax/parralax-procesadores.jpg");
+    height: 300px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parralax-tarjeta-madre{
+    background-image: url("../../img/parralax/parralax-tarjeta-madre.jpg");
+    height: 300px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parralax-tarjeta-video{
+    background-image: url("../../img/parralax/parralax-tarjeta-video.jpg");
+    height: 300px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parralax-teclados{
+    background-image: url("../../img/parralax/parralax-teclado.jpg");
+    height: 300px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .row .col-4 a{
     background: #888;
 }
@@ -131,4 +221,16 @@ ul.nav.justify-content-center li.nav-item  a.hvr-icon-down{
 
 ul.nav.justify-content-center{
     background: #666;
+}
+
+.card .card-body h5{
+    text-align: center
+}
+
+.card .card-body p{
+    text-align: center
+}
+
+.card .card-body a{
+    width: 100%;
 }
