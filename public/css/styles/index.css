@@ -1,5 +1,5 @@
 .carousel-item img{
-    height: 800px;
+    height: 450px;
 }
 
 .box svg{
@@ -73,4 +73,36 @@ form.form-modificar-adminUI{
 
 tbody tr th form input[type="text"]{
     width: 60%;
+}
+
+.container.mt-5.mb-5 .owl-carousel.owl-theme .ml-2.mr-2{
+    width: 100px;
+    height: 50px;
+    background: #999;
+}
+
+.container.slider-categorias #carouselExampleControls2.carousel.slide .carousel-inner .carousel-item.active .row .col-4 img{
+    height: 200px;
+}
+
+.parralax{
+    background-image: url("../../img/parralax/parralax-1.jpg");
+    height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parralax-2{
+    background-image: url("../../img/parralax/parralax-2.jpg");
+    height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.row .col-4 a{
+    background: #888;
 }
